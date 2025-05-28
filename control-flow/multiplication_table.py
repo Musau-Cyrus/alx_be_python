@@ -3,4 +3,4 @@ number = int(input("Enter a number to see its multiplication table:"))
 
 #Generate the multiplication table using a for loop
 for count in range(1, 11):
-    print(f"{number} x {count} = {number * count}")
+    print(f"{number} * {count} = {number * count}")
