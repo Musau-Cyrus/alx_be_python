@@ -1,7 +1,7 @@
 # Prompt the user for a ingle task
 task = str(input("Enter your task:"))
 priority = str(input("Priority (high/medium/low): ")).lower()
-time_bound = input("Is it time_bound-bound? (yes/no): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # A match case to raect differently
 match priority:
