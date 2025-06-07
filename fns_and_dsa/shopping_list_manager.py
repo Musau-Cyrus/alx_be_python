@@ -13,7 +13,7 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == 1:
-            item = input("Enter the item: ").lower()
+            item = input("Enter the item to add:").lower()
             shopping_list.append(item)
             print(f"{item} successfully added!")
 
@@ -31,7 +31,7 @@ def main():
         elif choice == 4:
             break
         else:
-            print("Invalid choice!")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
