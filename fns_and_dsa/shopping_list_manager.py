@@ -5,7 +5,7 @@ def display_menu():
     print("3. View List")
     print("4. Exit")
 
-def main():
+def our_function():
     shopping_list = []
 
     while True:
@@ -29,9 +29,10 @@ def main():
         elif choice == 3:
             print(f"Here is the current list: {shopping_list}")
         elif choice == 4:
+            print("Goodbye!")
             break
         else:
             print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
-    main()
+    our_function()
