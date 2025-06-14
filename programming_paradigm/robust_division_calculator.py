@@ -3,6 +3,6 @@ def safe_divide(float(numerator), float(denominator)):
         quotient = numerator / denominator
         return f"The result of the division is {quotient}"
     except ZeroDivisionError:
-        return "Error! Division by zero."
+        return "Error: Cannot divide by zero."
     except ValueError:
         return "You entered an invalid input"
