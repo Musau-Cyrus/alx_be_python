@@ -1,4 +1,4 @@
-def safe_divide(numerator:float, denominator:float):
+def safe_divide(float(numerator), float(denominator)):
     try:
         quotient = numerator / denominator
         return f"The result of the division is {quotient}"
