@@ -1,27 +1,26 @@
 class Book:
-    def __init__(self, title:str, author:str):
+    def __init__(self, title, author):
         self.title = title
         self.author = author
 
-    def get_details(self):
+    def __str__(self):
         return f"Book: '{self.title}' by {self.author}"
-
 
 class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
         self.file_size = file_size
 
-    def get_details(self):
-        return f"E{super().get_details()} - {self.file_size}MB"
+    def __str__(self):
+        return f"EBook: {super().__str__()} - {self.file_size}MB"
 
 class PrintBook(Book):
-    def __init__(self, title, author, page_count:int):
+    def __init__(self, title, author, page_count: int):
         super().__init__(title, author)
         self.page_count = page_count
 
-    def get_details(self):
-        return f"Print{super().get_details()} - {self.page_count} pages"
+    def __str__(self):
+        return f"PrintBook: {super().__str__()} - {self.page_count} pages"
 
 class Library:
     def __init__(self):
@@ -36,5 +35,4 @@ class Library:
             print("The library has no books.")
         else:
             for book in self.books:
-                print(book.get_details())
-
+                print(book)
