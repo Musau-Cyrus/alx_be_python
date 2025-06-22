@@ -1,5 +1,6 @@
 fruits = ["Mango", "Banana", "Orange"]
 
+#The Loop begins here
 for fruit in fruits:
     print(fruit)
 
